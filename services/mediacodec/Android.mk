@@ -3,6 +3,7 @@ LOCAL_PATH := $(call my-dir)
 _software_codecs := \
     libstagefright_soft_aacdec \
     libstagefright_soft_aacenc \
+    libstagefright_soft_ac3dec \
     libstagefright_soft_amrdec \
     libstagefright_soft_amrnbenc \
     libstagefright_soft_amrwbenc \

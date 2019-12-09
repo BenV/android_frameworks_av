@@ -41,6 +41,7 @@ static const struct {
     // alternate implementation
     { "OMX.google.xaac.decoder", "xaacdec", "audio_decoder.aac" },
     { "OMX.google.aac.encoder", "aacenc", "audio_encoder.aac" },
+    { "OMX.google.ac3.decoder", "ac3dec", "audio_decoder.ac3" },
     { "OMX.google.amrnb.decoder", "amrdec", "audio_decoder.amrnb" },
     { "OMX.google.amrnb.encoder", "amrnbenc", "audio_encoder.amrnb" },
     { "OMX.google.amrwb.decoder", "amrdec", "audio_decoder.amrwb" },

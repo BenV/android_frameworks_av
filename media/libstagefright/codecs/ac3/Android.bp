@@ -1,0 +1,42 @@
+cc_library_shared {
+    name: "libstagefright_soft_ac3dec",
+    vendor_available: true,
+    vndk: {
+        enabled: true,
+    },
+
+    srcs: ["SoftAC3.cpp"],
+
+    include_dirs: [
+        "frameworks/av/media/libstagefright/include",
+        "frameworks/native/include/media/openmax",
+        "external/ffmpeg",
+    ],
+
+    cflags: ["-Werror"],
+
+    version_script: "exports.lds",
+
+    sanitize: {
+        misc_undefined: [
+            "signed-integer-overflow",
+            "unsigned-integer-overflow",
+        ],
+        cfi: true,
+        diag: {
+            cfi: true,
+        },
+    },
+
+    shared_libs: [
+        "libstagefright_omx",
+        "libstagefright_foundation",
+        "libutils",
+        "liblog",
+        "libavcodecsf",
+        "libavutilsf",
+        "libavresamplesf",
+        "libswresamplesf",
+    ],
+    compile_multilib: "32",
+}

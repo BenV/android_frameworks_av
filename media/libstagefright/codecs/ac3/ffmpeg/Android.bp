@@ -1,0 +1,88 @@
+cc_prebuilt_library_shared {
+    name: "libavcodecsf",
+    target: {
+        android_arm: {
+            srcs: ["arm/libavcodecsf.so"],
+        },
+        android_arm64: {
+            srcs: ["arm/libavcodecsf.so"],
+        },
+        android_x86: {
+            srcs: ["x86/libavcodecsf.so"],
+        }
+    },
+    vendor_available: true,
+    vndk: {
+        enabled: true
+    },
+    strip: {
+        none: true,
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "libavresamplesf",
+    target: {
+        android_arm: {
+            srcs: ["arm/libavresamplesf.so"],
+        },
+        android_arm64: {
+            srcs: ["arm/libavresamplesf.so"],
+        },
+        android_x86: {
+            srcs: ["x86/libavresamplesf.so"],
+        }
+    },
+    vendor_available: true,
+    vndk: {
+        enabled: true
+    },
+    strip: {
+        none: true,
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "libavutilsf",
+    target: {
+        android_arm: {
+            srcs: ["arm/libavutilsf.so"],
+        },
+        android_arm64: {
+            srcs: ["arm/libavutilsf.so"],
+        },
+        android_x86: {
+            srcs: ["x86/libavutilsf.so"],
+        }
+    },
+    export_include_dirs: ["."],
+    vendor_available: true,
+    vndk: {
+        enabled: true
+    },
+    strip: {
+        none: true,
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "libswresamplesf",
+    target: {
+        android_arm: {
+            srcs: ["arm/libswresamplesf.so"],
+        },
+        android_arm64: {
+            srcs: ["arm/libswresamplesf.so"],
+        },
+        android_x86: {
+            srcs: ["x86/libswresamplesf.so"],
+        }
+    },
+    vendor_available: true,
+    vndk: {
+        enabled: true
+    },
+    strip: {
+        none: true,
+    },
+}
